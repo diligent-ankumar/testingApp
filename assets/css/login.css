@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../images/banner.png) no-repeat center center; /* Centered banner image */
+  background-size: cover; /* Cover the available space */
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.branding h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #000;
+  width: 100%;
+}
+
+.login-section, .signup-section {
+  padding: 2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section {
+  background: #2C3E50;
+  color: #fff;
+  text-align: center;
+}
+
+.signup-section {
+  background: #ECF0F1;
+  color: #333;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 300px;
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn {
+  width: 100%;
+  max-width: 300px;
+  text-transform: uppercase;
+}
+
+.login-btn {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: #fff;
+  color: #2C3E50;
+}
+
+.signup-btn {
+  background: #3498db;
+  color: #fff;
+}
+
+.signup-btn:hover {
+  background: #2980b9;
+}
+
+.icon-btn {
+  margin: 0 0.5rem;
+  background: #ddd;
+  color: #333;
+  padding: 0.5rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.icon-btn:hover {
+  background: #bbb;
+}

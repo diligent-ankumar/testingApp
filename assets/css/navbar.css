@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  padding-top: 80px; /* Adjust for fixed navbar height */
+}
+
+.navbar {
+  position: fixed; /* Fix the navbar to the top of the viewport */
+  top: 0; /* Align it to the top */
+  left: 0; /* Align it to the left */
+  width: 100%; /* Ensure it spans the entire width */
+  z-index: 1000; /* Ensure it stays above other content */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 40px; /* Adjusted padding for better alignment */
+  background-color: #fff; /* Background color */
+  border-bottom: 1px solid #ddd; /* Bottom border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for distinction */
+  box-sizing: border-box; /* Ensure padding doesn't overflow */
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .logo span {
+  color: #007bff;
+}
+
+.navbar .icons {
+  display: flex; /* Align icons horizontally */
+  gap: 20px; /* Adjusted gap for better spacing */
+}
+
+.navbar .icons img {
+  width: 30px; /* Icon width */
+  height: 30px; /* Icon height */
+  cursor: pointer;
+}
+
+.navbar .icons img:hover {
+  filter: brightness(0.8); /* Optional hover effect */
+}
+
+.home-btn {
+  text-decoration: none;
+  color: unset;
+}
+
+.username {
+  font-size: 14px;
+  color: #333;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+#cartDisplay {
+  position: relative;
+  display: inline-block;
+}
+
+#cartCount {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 2px 6px;
+  display: none; /* Hide initially if the count is 0 */
+}
+
+.d-none {
+  display: none !important; /* Utility class to hide elements */
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="assets/css/cart.css">
+    <link rel="stylesheet" href="assets/css/navbar.css">
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <script src="navbar.js"></script>
+    <div class="cart-container">
+      <h1>MY CART</h1>
+      <div class="cart-content">
+        <div class="cart-item">
+          <img src="assets/images/cart1.png" alt="Product Image">
+          <div class="item-details">
+            <h2>QUEST 5 Running Shoes For Men</h2>
+            <br/>
+            <p><strong>Color:</strong> Mercedes Team Silver</p>
+            <br/>
+            <p><strong>Size:</strong> Adult</p>
+            <br/>
+            <div class="quantity-price">
+              <select>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <br/>
+              <span class="price">$160.85</span>
+            </div>
+          </div>
+          <span class="delete-icon">🗑️</span>
+        </div>
+        <div class="cart-summary">
+          <p><strong>Subtotal:</strong> <span>$160.85</span></p>
+          <hr/>
+          <p><strong>Grand Total:</strong> <span>$160.85</span></p>
+          <button class="checkout-btn" onclick="window.location.href='checkout.html'" >Check Out</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
