@@ -56,16 +56,16 @@ body {
   font-weight: bold;
 }
 
-#cartDisplay {
+#cartDisplay, #wishlistDisplay {
   position: relative;
   display: inline-block;
 }
 
-#cartCount {
+#cartCount, #wishlistCount {
   position: absolute;
   top: -5px;
   right: -5px;
-  background-color: red;
+  background-color: #007bff;
   color: white;
   font-size: 12px;
   font-weight: bold;
@@ -76,4 +76,9 @@ body {
 
 .d-none {
   display: none !important; /* Utility class to hide elements */
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }

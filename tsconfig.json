@@ -1,9 +1,10 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
+    "module": "ESNext", // Use ES modules
+    "moduleResolution": "node",
     "target": "es6",
     "lib": ["es6", "dom"],
-    "outDir": "./",
+    "outDir": "./js",
     "rootDir": "../SoleSphere-main",
     "strict": true,
     "esModuleInterop": true,
@@ -11,5 +12,5 @@
   },
   "exclude": [
     "node_modules"
-  ]
+  ],
 }

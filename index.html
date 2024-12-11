@@ -6,68 +6,137 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="stylesheet" href="assets/css/navbar.css">
+    <script src="js/dist/filter.js"></script>
+    <script src="js/dist/cart.js"></script>
+    <script src="js/dist/wishlist.js"></script>
   </head>
   <body>
     <div id="navbar"></div>
-    <script src="navbar.js"></script>
+    <script type="module" src="js/dist/navbar.js"></script>
     <!-- Banner Section -->
-    <div class="banner"></div>
-    <!-- Filter Section -->
-    <section class="filter">
-      <button class="filter-btn active">All</button>
-      <button class="filter-btn">Nike</button>
-      <button class="filter-btn">Adidas</button>
-      <button class="filter-btn">Puma</button>
-      <button class="filter-btn">Bata</button>
-      <button class="filter-btn">Apex</button>
+   <div class="container" >
+    <section class="main">
+     <div class="banner"></div>
     </section>
-    <!-- Collection Section -->
-    <section class="collection">
-      <h2>Men's Collection</h2>
-      <div class="cards">
-        <!-- Card 1 -->
-        <div class="card">
-          <div class="tag new">New</div>
-          <img src="assets/images/shoes-1.png" alt="PUMA Trigger Running Shoes">
-          <div class="card-info">
-            <span class="category">Men / Women</span>
-            <h3>PUMA Trigger Running Shoes</h3>
-            <p class="price">$180.85</p>
+    <section class="main">
+      <section class="filter">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Nike</button>
+        <button class="filter-btn">Adidas</button>
+        <button class="filter-btn">Puma</button>
+        <button class="filter-btn">Bata</button>
+        <button class="filter-btn">Apex</button>
+      </section>
+      <!-- Collection Section -->
+      <section class="collection">
+        <h2>Men's Collection</h2>
+        <div class="cards">
+          <!-- Card 1 -->
+          <div class="card" data-brand="Puma" data-item-id="1" data-item-name="PUMA Trigger Running Shoes" data-item-price="180" data-item-quantity="2" data-file="shoes-5.avif">
+            <div class="tag new">New</div>
+            <img src="assets/images/shoes-5.avif" alt="PUMA Trigger Running Shoes">
+            <div class="card-info">
+              <span class="category">Men / Women</span>
+              <h3>PUMA Trigger Running Shoes</h3>
+              <p class="price">$180.85</p>
+            </div>
           </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="card">
-          <img src="assets/images/shoes-2.png" alt="Puma Mens Rider Play on">
-          <div class="card-info">
-            <span class="category">Men / Sports</span>
-            <h3>Puma Mens Rider Play on</h3>
-            <p class="price">$190.85</p>
+          <!-- Card 2 -->
+          <div class="card" data-brand="Puma" data-item-id="2" data-item-name="PUMA Shoes" data-item-price="180" data-item-quantity="1" data-file="shoes-10.png">
+            <div class="tag new">New</div>
+            <img src="assets/images/shoes-10.png" alt="PUMA Shoes">
+            <div class="card-info">
+              <span class="category">Women</span>
+              <h3>PUMA Shoes</h3>
+              <p class="price">$180.85</p>
+            </div>
           </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="card">
-          <div class="tag new">New</div>
-          <img src="assets/images/shoes-3.png" alt="Nike UV Color Changing Shoe">
-          <div class="card-info">
-            <span class="category">Men / Women</span>
-            <h3>Nike UV Color Changing Shoe</h3>
-            <p class="price">$160.85</p>
+          <!-- Card 3 -->
+          <div class="card" data-brand="Nike" data-item-id="3" data-item-name="Nike UV Color Changing Shoes" data-item-price="160" data-item-quantity="1" data-file="shoes-3.png">
+            <div class="tag new">New</div>
+            <img src="assets/images/shoes-3.png" alt="Nike UV Color Changing Shoe">
+            <div class="card-info">
+              <span class="category">Men / Women</span>
+              <h3>Nike UV Color Changing Shoe</h3>
+              <p class="price">$160.85</p>
+            </div>
           </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="card">
-          <div class="tag discount">-25%</div>
-          <img src="assets/images/shoes-4.png" alt="Nike Air Force Shoes">
-          <div class="card-info">
-            <span class="category">Men / Sports</span>
-            <h3>Nike Air Force Shoes</h3>
-            <p class="price">
-              <span class="discounted-price">$170.85</span>
-              <span class="original-price">$200.21</span>
-            </p>
+          <!-- Card 4 -->
+          <div class="card" data-brand="Nike" data-item-id="4" data-item-name="Nike Air Force Shoes" data-item-price="160" data-item-quantity="1" data-file="shoes-4.png">
+            <div class="tag discount">-25%</div>
+            <img src="assets/images/shoes-4.png" alt="Nike Air Force Shoes">
+            <div class="card-info">
+              <span class="category">Men / Sports</span>
+              <h3>Nike Air Force Shoes</h3>
+              <p class="price">
+                <span class="discounted-price">$170.85</span>
+                <span class="original-price">$200.21</span>
+              </p>
+            </div>
           </div>
+          <div class="card" data-brand="Apex" data-item-id="5" data-item-name="Apex Shoes" data-item-price="170" data-item-quantity="1" data-file="shoes-7.png">
+            <div class="tag discount">-25%</div>
+            <img src="assets/images/shoes-7.png" alt="Apex Shoes">
+            <div class="card-info">
+              <span class="category">Men / Sports</span>
+              <h3>Apex Air Force Shoes</h3>
+              <p class="price">
+                <span class="discounted-price">$170.85</span>
+                <span class="original-price">$200.21</span>
+              </p>
+            </div>
+          </div>
+          <div class="card" data-brand="Apex" data-item-id="6" data-item-name="Apex Shoes" data-item-price="170" data-item-quantity="1" data-file="shoes-8.png">
+            <div class="tag discount">-25%</div>
+            <img src="assets/images/shoes-8.png" alt="Apex Shoes">
+            <div class="card-info">
+              <span class="category">Men / Sports</span>
+              <h3>Apex Air Force Shoes</h3>
+              <p class="price">
+                <span class="discounted-price">$170.85</span>
+                <span class="original-price">$200.21</span>
+              </p>
+            </div>
+          </div>
+          <div class="card" data-brand="Bata" data-item-id="6" data-item-name="Bata Running Shoes" data-item-price="170" data-item-quantity="1" data-file="shoes-1.png">
+            <div class="tag new">New</div>
+            <img src="assets/images/shoes-1.png" alt="Bata Running Shoes">
+            <div class="card-info">
+              <span class="category">Men / Women</span>
+              <h3>Bata Trigger Running Shoes</h3>
+              <p class="price">$180.85</p>
+            </div>
+          </div>
+          <div class="card" data-brand="Bata" data-item-id="7" data-item-name="Bata Running Shoes" data-item-price="170" data-item-quantity="1" data-file="shoes-6.avif">
+            <div class="tag new">New</div>
+            <img src="assets/images/shoes-6.avif" alt="Bata Running Shoes">
+            <div class="card-info">
+              <span class="category">Men / Women</span>
+              <h3>Bata Trigger Running Shoes</h3>
+              <p class="price">$180.85</p>
+            </div>
+          </div>
+          <div class="card" data-brand="Adidas" data-item-id="7" data-item-name="Adidas Shoes" data-item-price="180" data-item-quantity="1" data-file="shoes-9.png">
+            <div class="tag new">New</div>
+            <img src="assets/images/shoes-9.png" alt="Adidas Shoes">
+            <div class="card-info">
+              <span class="category">Men / Women</span>
+              <h3>Adidas Trigger Running Shoes</h3>
+              <p class="price">$180.85</p>
+            </div>
+          </div>
+          <div class="card" data-brand="Adidas" data-item-id="8" data-item-name="Adidas Shoes" data-item-price="180" data-item-quantity="1" data-file="shoes-1.png">
+            <div class="tag new">New</div>
+            <img src="assets/images/shoes-1.png" alt="Adidas Shoes">
+            <div class="card-info">
+              <span class="category">Men / Women</span>
+              <h3>Adidas Trigger Running Shoes</h3>
+              <p class="price">$180.85</p>
+            </div>
+          </div>    
         </div>
-      </div>
+      </section>
     </section>
+  </div>
   </body>
 </html>
